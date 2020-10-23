@@ -214,11 +214,22 @@ header {
 }
 
 .logo {
-	height: 150px;
+	height: 110px;
 	width: auto;
 	float: left;
-	margin-top: 20px;
+	margin-top: 5px 0;
 }
+
+.logo-sticky {
+	height: 80px;
+	width: auto;
+	float: left;
+	margin-top: 5px 0;
+}
+
+.logo-sticky { display: none; }
+
+/*-------MAIN NAVIGATION--------*/
 
 .main-nav {
 	float: right;
@@ -246,6 +257,49 @@ header {
 .main-nav li a:active {
 	border-bottom: 2px solid #e67e22;
 }
+
+/*-------MOBILE NAVIGATION--------*/
+
+.mobile-nav-icon {
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-nav-icon i {
+	font-size: 200%;
+	color: #fff;
+}
+
+/*-------STICKY NAVIGATION--------*/
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.98);
+	box-shadow: 0 4px 2px #efefef;
+	z-index: 9999;
+}
+
+.sticky .main-nav {	
+	margin-top: 10px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+	padding: 20px 0;
+	color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-sticky {
+	display: block;
+}
+
+/*.sticky .logo { display: block; }*/
 
 /* ------------------------------ */
 /* -----------FEATURES----------- */
@@ -580,4 +634,29 @@ footer p {
 
 .ion-social-instagram:hover {
 	color: #517fa4;
+}
+
+/* ------------------------------ */
+/* -----------ANIMATION---------- */
+/* ------------------------------ */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4 {
+	opacity: 0;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+}
+
+.js--wp-4 {
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated {
+	opacity: 1;
 }

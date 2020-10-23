@@ -4,6 +4,7 @@
 	
 	<meta name="viewport" content="width=device-width" charset="utf-8">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
@@ -17,22 +18,24 @@
 		<nav>
 			<div class="row">
 				<img class="logo" src="resources/img/logo.png" alt="Seth's Food Chain Logo">
-				<ul class="main-nav">
-					<li><a href="#">Food Delivery</a></li>
-					<li><a href="#">How it works</a></li>
-					<li><a href="#">Our Cities</a></li>
-					<li><a href="#">Sign Up</a></li>
+				<img class="logo-sticky" src="resources/img/logo.png" alt="Seth's Food Chain Logo">
+				<ul class="main-nav js--main-nav">
+					<li><a href="#features">Food Delivery</a></li>
+					<li><a href="#works">How it works</a></li>
+					<li><a href="#cities">Our Cities</a></li>
+					<li><a href="#plans">Sign Up</a></li>
 				</ul>
+				<a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
 			</div>
 		</nav>
 		<div class="hero-text-box">
 			<h1>Goodbye, Junk food. <br>Hello healthy meals</h1>
-			<a class="btn btn-full" href="#">I'm Hungry</a>
-			<a class="btn btn-ghost" href="#">Show me more</a>
+			<a class="btn btn-full js--scroll-to-plans" href="#">I'm Hungry</a>
+			<a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
 		</div>	
 	</header>
 
-	<section class="section-features">
+	<section class="section-features js--section-features" id="features">
 		<div class="row">
 			<h2>Get Food fast &mdash; not fast food</h2>
 			<p class="long-copy">
@@ -40,7 +43,7 @@
 			</p> 
 		</div>
 
-		<div class="row">
+		<div class="row js--wp-1">
 			<div class="col span-1-of-4 box">
 				<i class="ion-earth icon-big"></i>
 				<h3>Up to 365 days/year</h3>
@@ -120,13 +123,13 @@
 		</ul>	
 	</section>
 
-	<section class="section-steps">
+	<section class="section-steps" id="works">
 		<div class="row">
 			<h2>How it works &mdash; Simple as 1, 2, 3</h2>
 		</div>
 		<div class="row">
 			<div class="col span-1-of-2 steps-box">
-				<img src="resources/img/iphone.png" alt="sethfodd app on iphone" class="app-screen">
+				<img src="resources/img/iphone.png" alt="sethfodd app on iphone" class="app-screen js--wp-2">
 			</div>
 			<div class="col span-1-of-2 steps-box">
 				<div class="works-step">
@@ -148,11 +151,11 @@
 		</div>
 	</section>
 
-	<section class="section-cities">
+	<section class="section-cities" id="cities">
 		<div class="row">
 			<h2>We're currently in these cities</h2>
 		</div>
-		<div class="row">
+		<div class="row js--wp-3">
 			<div class="col span-1-of-4 box">
 				<img src="resources/img/NE.jpg" alt="nueva ecija">
 				<h3>NUEVA ECIJA</h3>
@@ -247,13 +250,13 @@
 		</div>
 	</section>
 
-	<section class="section-plans">
+	<section class="section-plans js--section-plans"  id="plans">
 		<div class="row">
 			<h2>Start eating healthy today</h2>
 		</div>
 		<div class="row">
 			<div class="col span-1-of-3">
-				<div class="plan-box">
+				<div class="plan-box js--wp-4">
 					<div>
 						<h3>Premium</h3>
 						<p class="plan-price">₱4,200 <span>/ Month</span></p>
@@ -411,6 +414,13 @@
 			<p>Copyright &copy; 2020 by SethFoodChain. All rights reserved.</p>
 		</div>
 	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	<script src="vendors/js/jquery.waypoints.min.js"></script>
+	<script src="resources/js/script.js"></script>
 
 </body>
 </html>
