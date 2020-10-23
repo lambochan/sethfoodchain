@@ -198,7 +198,8 @@ input[type=submit] {
 /* ------------------------ */
 
 header {
-	background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(img/hero.jpg);
+	background-image: -webkit-linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(img/hero-min.jpg);
+	background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(img/hero-min.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -422,7 +423,8 @@ header {
 /* ------------------------------ */
 
 .section-testimonials {
-	background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(img/back-customers.jpg);
+	background-image: -webkit-linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(img/back-customers-min.jpg);
+	background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(img/back-customers-min.jpg);
 	background-size: cover;
 	color: #fff;
 	background-attachment: fixed;
@@ -538,6 +540,7 @@ cite img {
 
 input[type=text],
 input[type=email],
+input[type=tel],
 select,
 textarea {
 	width: 100%;
