@@ -92,4 +92,8 @@ $(document).ready(function() {
 
 	});
 
+	// $('.js--btn-sign').click(function(event) {
+	// 	$('html, body').animate({scrollTop: $('.js--section-form').offset().top}, 1000);
+	// });
+
 });
