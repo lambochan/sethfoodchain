@@ -404,6 +404,7 @@ header {
 	margin-right: 10px;
 }
 
+
 /* ------------------------------ */
 /* ------CITIES SECTION---------- */
 /* ------------------------------ */
@@ -639,27 +640,21 @@ footer p {
 	color: #517fa4;
 }
 
-/* ------------------------------ */
-/* -----------ANIMATION---------- */
-/* ------------------------------ */
+/*FORM MESSAGE POP UP*/
 
-.js--wp-1,
-.js--wp-2,
-.js--wp-3,
-.js--wp-4 {
-	opacity: 0;
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
+.form-messages {
+	width: 70%;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 30px;
+	color: #333;
 }
 
-.js--wp-4 {
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
+.success {
+	background-color: rgba(38, 191,68, 0.9); 
 }
 
-.js--wp-1.animated,
-.js--wp-2.animated,
-.js--wp-3.animated,
-.js--wp-4.animated {
-	opacity: 1;
+.error {
+	background-color: rgba(209, 46,46, 0.9);	
 }
