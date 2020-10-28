@@ -45,15 +45,18 @@
         <i class="checkmark">✓</i>
       </div>
         <h1>Success</h1> 
-        <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
+        <p>We received your message request<br/> we'll be in touch shortly!</p>
       </div>
       <div class="row">
           <div class="col span-1-of-1">
             <label>&nbsp;</label>
           </div>
-          <div class="col span-2-of-2">
-            <a href="index.html"><input type="submit" value="back"></a>
-          </div>
+          <button onclick="goBack()">Go Back</button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
       </div>
     </body>
 </html>

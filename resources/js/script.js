@@ -92,8 +92,8 @@ $(document).ready(function() {
 
 	});
 
-	// $('.js--btn-sign').click(function(event) {
-	// 	$('html, body').animate({scrollTop: $('.js--section-form').offset().top}, 1000);
-	// });
+	$('.js--back-btn').click(function(event) {
+		$('html, body').animate({scrollTop: $('html, body').offset().top}, 1000);
+	});
 
 });
